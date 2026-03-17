@@ -104,15 +104,34 @@
       color: var(--rule);
       margin: 0 0.6rem;
     }
+    .tagline-wrap {
+      position: relative;
+      display: inline-block;
+      cursor: default;
+    }
+    .tagline-orig {
+      transition: opacity 0.5s ease;
+    }
+    .tagline-secret {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-style: italic;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      white-space: nowrap;
+      font-size: 0.95rem;
+    }
+    .tagline-wrap:hover .tagline-orig { opacity: 0; }
+    .tagline-wrap:hover .tagline-secret { opacity: 1; }
   </style>
 </head>
-<!-- hand-coded. no frameworks, no build tools, no JavaScript. -->
+<!-- hey :D -->
 <body>
   <main>
     <h1>Edwin Lau</h1>
     <hr>
-    <p>everything is a win when the goal is experience</p>
-    <nav>
+<p><span class="tagline-wrap"><span class="tagline-orig">everything is a win when the goal is experience</span><span class="tagline-secret">my body is a machine that turns anxiety into b2b SaaS</span></span></p>    <nav>
       <a href="https://linkedin.com/in/lau-edwin" target="_blank" rel="noopener">LinkedIn</a>
       <span class="sep">&middot;</span>
       <a href="mailto:edwin@emsoft.com">Email</a>
