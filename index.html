@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edwin Lau</title>
+  <meta name="description" content="Edwin Lau">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fafaf8;
+      --text: #1a1a1a;
+      --text-secondary: #555;
+      --link: #1a1a1a;
+      --link-hover: #888;
+      --rule: #ccc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --text: #e0ddd8;
+        --text-secondary: #999;
+        --link: #e0ddd8;
+        --link-hover: #777;
+        --rule: #333;
+      }
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Cormorant Garamond', 'Georgia', serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+      padding: 2rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 360px;
+    }
+
+    h1 {
+      font-weight: 300;
+      font-size: 2.4rem;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      width: 2.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin-bottom: 1.6rem;
+    }
+
+    nav {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--link-hover);
+    }
+
+    nav .sep {
+      color: var(--rule);
+      margin: 0 0.6rem;
+    }
+  </style>
+</head>
+<!-- hand-coded. no frameworks, no build tools, no JavaScript. -->
+<body>
+  <main>
+    <h1>Edwin Lau</h1>
+    <hr>
+    <p>TODO: Write your bio here. One or two lines. Make it yours.</p>
+    <nav>
+      <a href="https://linkedin.com/in/lau-edwin" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="sep">&middot;</span>
+      <a href="mailto:edwin@emsoft.com">Email</a>
+      <span class="sep">&middot;</span>
+      <a href="https://x.com/lau__edwin" target="_blank" rel="noopener">X</a>
+    </nav>
+  </main>
+</body>
+</html>
